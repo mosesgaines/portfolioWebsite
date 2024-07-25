@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses Gaines Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Moses Gaines</div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Moses Gaines</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="profile-pic" src="./assets/circle-portrait.png" alt="Moses Gaines profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Moses Gaines</h1>
+            <p class="section__text__p2">Full-Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume_07252024.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/mosesgaines'">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://www.github.com/mosesgaines'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/goldenhour.JPEG" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2 Internships as SDE at Amazon</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/graduation-hat.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.S. Computer Science and Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hello! My name is Moses Gaines and I love creating productive and innovative solutions.
+                        My interest in Computer Science (namely Software Engineering), began when I was a senior in high school
+                        and I have not looked back since. I initially decided to study CS because it made sense for me with how much time I was spending
+                        on computers, and when I began my undergrad I really fell in love with the process of problem-solving and creating beautiful, responsive software.
+                        <br /><br />
+                        I graduated from Ohio State University with a B.S. in Computer Science and Engineering, and spent two summers as a SDE
+                        Intern for Amazon performing full-stack responsibilities. I am currently searching for my first full-time employment opportunity
+                        where I can apply my learnings and grow as a developer.
+                        <br /><br /> 
+                        Outside of programming and work, you will find me disc golfing, playing with my cats, going to the gym, or spending time with my family and loved ones.
+                        I love the outdoors and will do just about anything to get outside and active.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="jobs-container experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">SDE Intern</h2>
+                    <h3 class="company-name">Amazon</h3>
+                    <div class="job-description">
+                        <p>Designed and implemented an email notification suppression system to enhance user experience on spending
+                            platform, configured the frontend and backend mechanisms (utilizing Java and JS/ReactJS) to implement the system,
+                            and communicated with customers and incorporated feedback to improve functionality and UX.</p>
+                    </div>
+                    <div class="article-container">
+                        <ul class="technologies-used">
+                            <li>
+                                <div class="technology java">Java</div>
+                            </li>
+                            <li>
+                                <div class="technology js">JavaScript</div>
+                            </li>
+                            <li>
+                                <div class="technology html">HTML</div>
+                            </li>
+                            <li>
+                                <div class="technology css">CSS</div>
+                            </li>
+                            <li>
+                                <div class="technology dynamo">DynamoDB</div>
+                            </li>
+                            <li>
+                                <div class="technology git">Git</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">APP SDE Intern</h2>
+                    <h3 class="company-name">Amazon</h3>
+                    <div class="job-description">
+                        <p>Collaborated on design and implementation of an automated system to increase productivity of accountant
+                            reconciliation work, remodeled the existing accounting system to incorporate scheduling functionality, improving UX for
+                            accountants, and presented the completed project to cross-functional stakeholders to ensure satisfaction</p>
+                    </div>
+                    <div class="article-container">
+                        <ul class="technologies-used">
+                            <li>
+                                <div class="technology java">Java</div>
+                            </li>
+                            <li>
+                                <div class="technology js">JavaScript</div>
+                            </li>
+                            <li>
+                                <div class="technology html">HTML</div>
+                            </li>
+                            <li>
+                                <div class="technology css">CSS</div>
+                            </li>
+                            <li>
+                                <div class="technology react">React</div>
+                            </li>
+                            <li>
+                                <div class="technology git">Git</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title company-name">Skills</h2>
+                    <div class="article-container">
+                        <div class="tech-container">
+                            <img src="./assets/java.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">Java</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/git.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">Git</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/c.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">C</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/python.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">Python</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/ruby.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">Ruby</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/rails.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">Ruby on Rails</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/js.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">JavaScript</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/react.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">React</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/django.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">Django</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/html.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">HTML</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/css.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">CSS</span>
+                        </div>
+                        <div class="tech-container">
+                            <img src="./assets/sql.png" alt="Java logo" class="tech-logo">
+                            <span class="tooltip-text">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:gainesm.38@gmail.com">gainesm.38@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/mosesgaines">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="credits">Built by Moses Gaines 2024.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

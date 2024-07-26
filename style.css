@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Tiny5&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --light-blue: rgb(149, 187, 240)
+}
+
 body {
     font-family: "Poppins", sans-serif;
+    /* background: rgb(28, 28, 99); */
+    background: linear-gradient(90deg, #03050b, #091234);
 }
 
 html {
@@ -14,7 +21,7 @@ html {
 }
 
 p {
-    color: rgb(85,85,85);
+    color: var(--light-blue);
 }
 
 a, .btn {
@@ -43,15 +50,15 @@ nav {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
-    text-decoration-color: white;
+    /* text-decoration-color: white; */
 }
 
 a:hover {
-    color: gray;
+    color: var(--light-blue);
     text-decoration: overline;
-    text-decoration-color: gray;
+    text-decoration-color: var(--light-blue);
 }
 
 .nav-links a:hover {
@@ -59,7 +66,11 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    /* font-family: 'Brush Script MT', cursive; */
+    /* font-family: "Tiny5", sans-serif; */
+    font-family: "Righteous", sans-serif;
+    font-size: 3rem;
+    color: var(--light-blue);
 }
 
 .logo:hover {
@@ -123,7 +134,7 @@ a:hover {
 }
 .menu-links.open {
     max-height: 300px;
-    animation: fadeIn 1s;
+    animation:   1s;
     border: rgb(53, 53, 53) 0.1rem solid;
     margin-top: 1rem;
     border-radius: 2rem;
@@ -205,6 +216,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    color: white;
 }
 
 #socials-container {
@@ -221,6 +233,8 @@ section {
     &:hover {
         transform: scale(1.5);
     }
+
+    
 }
 
 .icon {
@@ -252,16 +266,19 @@ section {
 }
 
 .btn-color-1, .btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
+    background: white;
+    color: #11205b;
 }
 
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: var(--light-blue);
+    color: white;
 }
 
 .btn-color-2 {
     background: none;
+    border-color: white;
+    color: white;
 }
 
 .btn-color-2:hover {
@@ -311,13 +328,26 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: var(--light-blue) 0.1rem solid;
     text-align: center;
+    background: none;
+    opacity: 85%;
 }
 
 .details-container img {
     cursor: default;
+
+    &.exp, &.grad {
+        filter: invert(100);
+    }
+}
+
+.details-container p {
+    color: white;
+}
+
+h3 {
+    color: var(--light-blue);
 }
 
 .section-container {
@@ -331,18 +361,27 @@ section {
     margin: auto 0;
 }
 
+.text-container p {
+    color: white;
+}
+
 #experience {
     position: relative;
 }
 
 .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: var(--light-blue);
     font-weight: 600;
     font-size: 1.75rem;
 }
 
 .company-name {
     margin-bottom: 1.5rem;
+    color: white;
+
+    &.skills {
+        color: var(--light-blue);
+    }
 }
 
 .experience-details-container {
@@ -358,6 +397,7 @@ section {
     grid-template-areas:". . . . . ."
                         ". a a b b ."
                         ". . c c . .";
+    color: white;
 }
 
 .jobs-container .details-container:first-child {
@@ -376,6 +416,11 @@ section {
     margin-bottom: 1rem;
 }
 
+.job-description p {
+    /* color:var(--light-blue); */
+    color: white;
+}
+
 .technologies-used {
     list-style: none;
     display: flex;
@@ -383,7 +428,7 @@ section {
 }
 
 .technology {
-    border: black 0.1rem solid;
+    border: white 0.1rem solid;
     border-radius: 1rem;
     padding: 2px 10px;
     justify-content: space-around;
@@ -422,7 +467,7 @@ section {
 .tooltip-text {
     visibility: hidden;
     width: 120px;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: 400;
     padding: 5px 0;
@@ -438,7 +483,7 @@ section {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     row-gap: 1.3rem;
     justify-content: center;
     align-content: center;
@@ -514,25 +559,28 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border-color: var(--light-blue);
+    background: none;
 }
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 30rem;
+    border: var(--light-blue) 0.1rem solid;
+    /* object-fit: cover; */
 }
 
 .project-title {
     margin: 1rem;
-    color: black;
+    color: var(--light-blue);
 }
 
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
+/* .project-btn {
+    background: var(--light-blue);
+    color: white;
+    border-color: #11205b;
+} */
 
 #contact {
     position: relative;
@@ -546,9 +594,7 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background-color: rgb(250, 250, 250);
+    border: var(--light-blue) 0.1rem solid;
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -556,10 +602,14 @@ article .icon {
 .contact-info-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 0.5rem;
     margin: 1rem;
 }
+
+/* .contact-info-container a {
+    color: var(--light-blue);
+} */
 
 .contact-info-container a:hover {
     text-decoration: underline;
@@ -573,10 +623,12 @@ article .icon {
 
 .contact-icon {
     cursor: default;
+    filter: invert(100);
 }
 
 .email-icon {
     height: 2.5rem;
+    filter: invert(100);
 }
 
 footer {
@@ -588,3 +640,37 @@ footer p {
     text-align: center;
     opacity: 30%;
 }
+
+.spotlight {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes move-twinkle-back {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 5000px}
+}
+
+.stars, .twinkling {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    position: fixed;
+    background: url(./assets/stars.png) repeat top center;
+    animation: move-twinkle-back 1000s linear infinite;
+    z-index: -2;
+}
+
+/* .twinkling {
+    position: fixed;
+    background: transparent url(./assets/twinkling.png) repeat top center;
+    z-index: -1;
+    animation: move-twinkle-back 200s linear infinite;
+    opacity: 0.01;
+} */

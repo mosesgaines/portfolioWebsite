@@ -4,7 +4,8 @@
 * {
     margin: 0;
     padding: 0;
-    /* max-width: fit-content; */
+    /* max-width: 100%; */
+    /* background-size: 100%; */
 }
 
 :root {
@@ -15,11 +16,13 @@ body {
     font-family: "Poppins", sans-serif;
     /* background: rgb(28, 28, 99); */
     background: linear-gradient(90deg, #03050b, #091234);
+    /* width: 100%; */
 }
 
 html {
     scroll-behavior: smooth;
     /* max-width: 100%; */
+    /* overflow-x: hidden; */
 }
 
 p {
@@ -571,13 +574,13 @@ h3 {
     font-weight: 500;
 } */
 
-.tooltip-text::after {
+/* .tooltip-text::after {
     content: "";
     position: absolute;
     bottom: 100%;
     left: 50%;
     margin-left: -5px;
-}
+} */
 
 /* article {
     display: flex;
@@ -675,6 +678,7 @@ article .icon {
 footer {
     height: 26vh;
     margin: 0 1rem;
+    width: 100%;
 }
 
 footer p {
@@ -684,6 +688,7 @@ footer p {
 
 .rocket-container {
     position: absolute;
+    /* width: 80px; */
     /* right: 4rem;
     bottom: -215rem; */
     right: 3%;
@@ -723,10 +728,7 @@ footer p {
     inset: 0;
     pointer-events: none;
     z-index: -1;
-    /* size: 100%; */
-    width: inherit;
-    height: inherit;
-    overflow-x: hidden;
+    /* max-width: 100%; */
 }
 
 @keyframes move-twinkle-back {
@@ -736,14 +738,10 @@ footer p {
 
 .stars {
     inset: 0;
-    width: 100%;
-    height: 100%;
     display: block;
-    width: inherit;
-    height: inherit;
     position: fixed;
     background: url(./assets/stars.png) repeat top center;
     animation: move-twinkle-back 1000s linear infinite;
     z-index: -2;
-    overflow-x: hidden;
+    /* max-width: 100%; */
 }

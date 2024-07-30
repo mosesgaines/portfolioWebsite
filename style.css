@@ -14,6 +14,8 @@ body {
     font-family: "Poppins", sans-serif;
     /* background: rgb(28, 28, 99); */
     background: linear-gradient(90deg, #03050b, #091234);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 html {
@@ -66,8 +68,6 @@ a:hover {
 }
 
 .logo {
-    /* font-family: 'Brush Script MT', cursive; */
-    /* font-family: "Tiny5", sans-serif; */
     font-family: "Righteous", sans-serif;
     font-size: 3rem;
     color: var(--light-blue);
@@ -134,7 +134,7 @@ a:hover {
 }
 .menu-links.open {
     max-height: 300px;
-    animation:   1s;
+    animation: 1s fadeIn;
     border: rgb(53, 53, 53) 0.1rem solid;
     margin-top: 1rem;
     border-radius: 2rem;

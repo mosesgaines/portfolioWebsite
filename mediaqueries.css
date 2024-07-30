@@ -118,10 +118,10 @@
 }
 
 @media screen and (max-width: 720px) {
-    body {
+    /* body {
         max-width: 100%;
         overflow-x: hidden;
-    }
+    } */
     #contact, footer {
         height: 40vh;
     }

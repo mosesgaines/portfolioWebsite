@@ -11,7 +11,17 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    a:hover {
+        font-size: initial;
+    }
     #desktop-nav {
         display: none;
     }
@@ -20,9 +30,14 @@
     }
     #experience, .experience-details-container {
         margin-top: 2rem;
+        /* width: 50vw; */
     }
     #profile, .section-container {
         display: block;
+
+        &:hover .kenny-text {
+            visibility: hidden;
+        }
     }
     .arrow {
         display: none;
@@ -42,21 +57,17 @@
         margin-top: 0;
     }
     .rocket {
-        display: none;
+        visibility: hidden;
     }
     .spotlight {
-        display: none;
+        visibility: hidden;
     }
-    .stars {
-        max-width: 100%;
-    }
-    .contact-info-container .contact-icon {
-        padding-left: 5px;
-    }
-
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+    }
     #contact, footer {
         height: 40vh;
     }
@@ -91,6 +102,9 @@
         gap: 0.5rem;
         text-align: center;
     }
+    section, .section-container {
+        height: fit-content;
+    }
     .section__pic-container {
         width: auto;
         height: 46vw;
@@ -111,5 +125,10 @@
     a:hover {
         font-size: 1.5rem;
         text-decoration: none;
+    }
+    .section__pic-container:hover {
+        &.kenny-text {
+            visibility: hidden;
+        }
     }
 }

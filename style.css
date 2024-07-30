@@ -6,12 +6,6 @@
     padding: 0;
 }
 
-.WebContainer{ 
-    width:100%; 
-    min-width:1000px; 
-    height:auto; 
-} 
-
 :root {
     --light-blue: rgb(149, 187, 240)
 }
@@ -20,7 +14,7 @@ body {
     font-family: "Poppins", sans-serif;
     /* background: rgb(28, 28, 99); */
     background: linear-gradient(90deg, #03050b, #091234);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     max-width: 100%;
 }
 

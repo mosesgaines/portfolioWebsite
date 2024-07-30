@@ -17,26 +17,3 @@ function toggleMenu() {
         )`;
     });
 
-//     window.onload = function() {
-//         // window.location.replace('./#')
-//         // history.replaceState('./#');
-// }
-
-// const sections = document.querySelectorAll('.section');
-
-// let currentSection = 'profile';
-// window.addEventListener('scroll', () => {
-//     sections.forEach(section => {
-//         if (window.scrollY >= (section.offsetTop - 200) && (Math.abs(window.scrollY - section.offsetTop) < 500)) {
-//             currentSection = section.id;
-//             // window.location.replace(`./#${currentSection}`);
-//             console.log(`./#${currentSection}`);
-//             // window.location.replace(`./#${currentSection}`);
-//             if (history.pushState) {
-//                 history.pushState(null, null, `./#${currentSection}`);
-//             } else {
-//                 location.hash = `./#${currentSection}`
-//             }
-//         }
-//     });
-// });

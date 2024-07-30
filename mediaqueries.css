@@ -11,20 +11,7 @@
     }
 }
 
-@media screen and (max-width: 1960px) {
-    /* body {
-        width: 100%;
-    } */
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-    .about-containers {
-        flex-wrap: wrap;
-    }
-    a:hover {
-        font-size: initial;
-    }
+@media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
@@ -34,16 +21,8 @@
     #experience, .experience-details-container {
         margin-top: 2rem;
     }
-    .details-container {
-        margin: 0;
-        padding: 20px;
-    }
     #profile, .section-container {
         display: block;
-
-        &:hover .kenny-text {
-            visibility: hidden;
-        }
     }
     .arrow {
         display: none;
@@ -78,9 +57,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* body {
-        width: 100vw;
-    } */
     #contact, footer {
         height: 40vh;
     }
@@ -114,9 +90,6 @@
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
-    }
-    section, .section-container {
-        height: fit-content;
     }
     .section__pic-container {
         width: auto;

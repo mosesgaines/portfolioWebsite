@@ -103,7 +103,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: black;
     transition: all 0.3 ease-in-out;
 }
 
@@ -193,28 +193,11 @@ section {
     height: 80vh;
 }
 
-.kenny-text {
-    visibility: hidden;
-    width: 120px;
-    color: white;
-    text-align: center;
-    font-weight: 400;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 60%;
-    left: 5%;
-}
-
 .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
-
-    &:hover .kenny-text{
-        visibility: visible;
-    }
 }
 
 .section__text {
@@ -346,8 +329,6 @@ section {
 }
 
 .details-container {
-    align-items: center;
-    justify-content: center;
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -355,6 +336,7 @@ section {
     border: var(--light-blue) 0.1rem solid;
     text-align: center;
     background: none;
+    opacity: 85%;
 }
 
 .details-container img {
@@ -448,7 +430,6 @@ h3 {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .technology {
@@ -459,47 +440,31 @@ h3 {
     margin: 4px;
     font-size: small;
     transition: all 200ms;
-    color: white;
 
     &:hover {
         transform:scale(1.1);
         cursor: default;
 
         &.java {
-            background: rgb(49, 116, 185);
+            background: rgb(79, 134, 245);
         }
         &.js {
-            background: rgb(251, 222, 36);
+            background: rgb(246, 231, 29);
         }
         &.html {
-            background: rgb(242, 101, 37);
+            background: rgb(255, 117, 37);
         }
         &.css {
-            background: rgb(64, 159, 218);
+            background: rgb(66, 189, 250);
         }
         &.dynamo {
-            background: rgb(31, 91, 153);
+            background: rgb(13, 144, 210);
         }
         &.react {
-            background: rgb(97, 218, 251);
+            background: rgb(59, 214, 249);
         }
         &.git {
-            background: rgb(240, 80, 48);
-        }
-        &.python {
-            background: rgb(248, 192, 8);
-        }
-        &.django {
-            background: rgb(18, 54, 40);
-        }
-        &.firebase {
-            background: rgb(249, 203, 45);
-        }
-        &.android {
-            background: rgb(83, 220, 132);
-        }
-        &.sql {
-            background: rgb(118, 197, 236);
+            background: rgb(252, 99, 10);
         }
     }
 }
@@ -601,9 +566,6 @@ article .icon {
 .color-container {
     border-color: var(--light-blue);
     background: none;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
 }
 
 .project-img {
@@ -619,12 +581,11 @@ article .icon {
     color: var(--light-blue);
 }
 
-.project-btn {
-    /* background: var(--light-blue);
+/* .project-btn {
+    background: var(--light-blue);
     color: white;
-    border-color: #11205b; */
-    margin-bottom: 1rem;
-}
+    border-color: #11205b;
+} */
 
 #contact {
     position: relative;
@@ -736,7 +697,7 @@ footer p {
     to {background-position: -10000px 5000px}
 }
 
-.stars {
+.stars, .twinkling {
     inset: 0;
     display: block;
     position: fixed;

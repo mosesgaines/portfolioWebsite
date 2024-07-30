@@ -182,6 +182,9 @@
     .project-img {
         height: auto;
     }
+    .contact-info-container .p {
+        margin: 1rem;
+    }
 }
 
 @media (hover: none) {
